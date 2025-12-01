@@ -1,6 +1,6 @@
 // Typing effect
 const typingText = document.querySelector(".typing");
-const roles = ["Frontend Developer", "AI Enthusiast", "Cross-Platform Builder"];
+const roles = ["Fullstack Developer", "AI Enthusiast", "Cross-Platform Builder"];
 let i = 0, j = 0, currentText = "", isDeleting = false;
 
 function type() {
@@ -126,4 +126,5 @@ window.addEventListener('resize', initParticles);
 
 initParticles();
 animateParticles();
+
 
