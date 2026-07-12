@@ -2,7 +2,7 @@
 
 A responsive, animated personal portfolio built with vanilla HTML, CSS, and JavaScript — featuring a glassmorphism UI, 3D hover interactions, an interactive particle background, and modal-based project/certificate viewers.
 
-🔗 **Live site:** [](https://ayushshukla-01.github.io/Portfolio/)
+🔗 **Live site:** [`Live website`](https://ayushshukla-01.github.io/Portfolio/)
 📄 **Resume:** [`Ayush_Shukla_FS.pdf`](./Ayush_Shukla_FS.pdf)
 
 ---
