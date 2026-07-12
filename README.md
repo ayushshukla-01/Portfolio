@@ -2,7 +2,7 @@
 
 A responsive, animated personal portfolio built with vanilla HTML, CSS, and JavaScript — featuring a glassmorphism UI, 3D hover interactions, an interactive particle background, and modal-based project/certificate viewers.
 
-🔗 **Live site:** [add your deployed URL here]
+🔗 **Live site:** [[add your deployed URL here](https://github.com/ayushshukla-01/Portfolio)]
 📄 **Resume:** [`Ayush_Shukla_FS.pdf`](./Ayush_Shukla_FS.pdf)
 
 ---
@@ -42,26 +42,17 @@ portfolio/
 ├── Ayush_Shukla_FS.pdf        # Downloadable resume
 ├── myphoto.JPG                # Profile photo
 ├── favicon.ico                 # Site favicon
-├── portfolio-preview.png        # Project screenshot
-├── soil-app-ui.png                # Project screenshot
-├── chat-app-ui.png                  # Project screenshot
-├── placement-portal-ui.png            # Project screenshot
-├── edu-space-interface.png             # Project screenshot
-├── rdso-cert.jpg                         # Certificate image
-├── manit-cert.jpg                         # Certificate image
-├── blockchain-cert.jpg                     # Certificate image
-├── nss-cert.jpg                             # Certificate image
-└── accenture-cert.jpg                        # Certificate image
+
 ```
 
-> Note: image assets referenced in `index.html` need to be added to the root folder for them to render — they aren't included in this repo export.
+
 
 ## Running Locally
 
 No build step required.
 
 ```bash
-git clone https://github.com/ayushshukla/portfolio.git
+git clone https://github.com/ayushshukla-01/portfolio.git
 cd portfolio
 # then just open index.html in a browser, or serve it:
 npx serve .
