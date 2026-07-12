@@ -3,36 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayush Shukla | Portfolio</title>
+  <title>Ayush Shukla | Full Stack Developer</title>
+  <meta name="description" content="Ayush Shukla — Full Stack Developer building real-time systems, REST APIs, and cross-platform apps with React, Node.js, Django, and Flutter." />
+  <meta name="author" content="Ayush Shukla" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ayush Shukla | Full Stack Developer" />
+  <meta property="og:description" content="Portfolio of Ayush Shukla — Full Stack Developer (React, Node.js, Django, Flutter)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="myphoto.JPG" />
+
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
 </head>
 <body>
   <canvas id="bgCanvas"></canvas>
 
- <section class="hero" id="home">
-  <div class="hero-content">
-    <img src="profile image.jpg" alt="Ayush Shukla" class="profile-pic">
-    <h1 class="neon-name">Ayush Shukla</h1>
-    <h2><span class="typing"></span></h2>
-    <p>Computer Science Engineer | Ex-Intern RDSO | Ex- intern MANIT | Tech Explorer</p>
-    
-    <div class="hero-buttons">
-      <a href="#contact" class="btn">Let’s Connect 🚀</a>
-      <a href="Ayush_Shukla_FS.pdf" class="btn btn-outline" download> Download Resume</a>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="myphoto.JPG" alt="Ayush Shukla" class="profile-pic" id="profilePic">
+
+      <!-- Image Zoom Modal -->
+      <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
+      <h1 class="neon-name">Ayush Shukla</h1>
+      <h2><span class="typing"></span></h2>
+      <p>Full Stack Developer | Ex-Intern, RDSO | Ex-Intern, MANIT Bhopal | Building real-time & cross-platform systems</p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Let's Connect 🚀</a>
+        <a href="Ayush_Shukla_FS.pdf" class="btn btn-outline" download>Download Resume</a>
+      </div>
     </div>
-  </div>
-  <div class="scroll-down">↓</div>
-</section>
+    <div class="scroll-down">↓</div>
+  </section>
 
   <!-- About -->
   <section id="about" class="section glass">
     <h2>About Me</h2>
     <p>
-      I am a passionate CSE student specializing in <strong>front-end</strong> and 
-      <strong>cross-platform development</strong>. I love combining technology and creativity 
-      to build impactful projects. Skilled in Flutter, React, Django, AI tools, 
-      and always eager to explore new technologies.
+      Full-stack developer specializing in real-time systems and backend architecture — React, Node.js/Express, Django/Flask, PostgreSQL/MongoDB, with Flutter for mobile. I've shipped production tools at RDSO and MANIT, including a custom WebSocket-based chat app. Right now I'm deepening my knowledge of system design and scalable architecture, and always chasing the next thing worth learning.
     </p>
   </section>
 
@@ -40,12 +55,16 @@
   <section id="skills" class="section glass">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card"> HTML / CSS</div>
-      <div class="skill-card"> Python / C</div>
-      <div class="skill-card"> Flutter</div>
-      <div class="skill-card"> React.js</div>
-      <div class="skill-card"> Django / Flask</div>
-      <div class="skill-card"> UI/UX</div>
+      <div class="skill-card">React.js / Tailwind CSS</div>
+      <div class="skill-card">Node.js / Express.js</div>
+      <div class="skill-card">Django / Flask</div>
+      <div class="skill-card">Flutter / Dart</div>
+      <div class="skill-card">PostgreSQL / MongoDB</div>
+      <div class="skill-card">Python / Java / C</div>
+      <div class="skill-card">TypeScript / JavaScript (ES6+)</div>
+      <div class="skill-card">REST APIs / WebSockets</div>
+      <div class="skill-card">Git / Docker / Linux</div>
+      <div class="skill-card">JWT Auth / CI-CD / Agile</div>
     </div>
   </section>
 
@@ -53,34 +72,104 @@
   <section id="projects" class="section glass">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>🌐 Portfolio Website</h3>
-        <p>A responsive personal website showcasing my skills & achievements.</p>
+      <div class="project-card" data-project="proj1">
+        <h3>💬 Real-Time Chat Application</h3>
+        <p>Full-stack chat app with a custom Socket.io server delivering &lt;100ms message latency, live presence, and Clerk auth.</p>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-project="proj2">
         <h3>🛠 Soil Suitability App</h3>
-        <p>Flutter + Django app for RDSO to calculate blanket thickness with graph plotting.</p>
+        <p>Flutter + Django app built for RDSO to calculate blanket thickness with real-time graph plotting — used by field engineers.</p>
       </div>
-      <div class="project-card">
-        <h3>🤖 AI Chatbot</h3>
-        <p>Multilingual AI chatbot with speech recognition & space science knowledge base.</p>
+      <div class="project-card" data-project="proj3">
+        <h3>🎓 Placement Portal</h3>
+        <p>Centralized full-stack portal supporting 1000+ students across applications, recruiter postings, and admin workflows.</p>
+      </div>
+      <div class="project-card" data-project="proj4">
+        <h3>🤖 AI Chatbot – Edu-Space</h3>
+        <p>Multilingual AI chatbot with speech recognition & TTS for interactive ISRO/space science education.</p>
+      </div>
+      <div class="project-card" data-project="proj5">
+        <h3>🌐 Portfolio Website</h3>
+        <p>This site — a responsive, animated portfolio built with HTML, CSS, and JavaScript.</p>
       </div>
     </div>
   </section>
+
+  <!-- === Project Details Modals === -->
+
+  <!-- Project 1 Modal -->
+  <div id="proj1" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>💬 Real-Time Chat Application</h2>
+      <img src="chat-app-ui.png" alt="Real-Time Chat Application Interface" class="project-img">
+      <p><strong>Description:</strong> Architected a production-grade full-stack chat app from scratch (no Firebase/Supabase) with a custom WebSocket server built on Socket.io, achieving sub-100ms message delivery and live presence tracking. Integrated Clerk authentication with webhook handling, cron jobs, and ImageKit for CDN-backed media delivery, cutting media load time by ~50%. Frontend ships with 5 themes, custom wallpapers, and dark/light mode.</p>
+      <p><strong>Tech Stack:</strong> React, Tailwind CSS, Hero UI, Node.js, Express.js, MongoDB, Socket.io, Clerk, ImageKit</p>
+      <a href="https://github.com/ayushshukla-01/imessage" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 2 Modal -->
+  <div id="proj2" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>🛠 Soil Suitability App</h2>
+      <img src="soil-app-ui.png" alt="Soil Suitability Interface" class="project-img">
+      <p><strong>Description:</strong> Built 8+ REST APIs for soil blanket thickness analysis used in railway infrastructure evaluation at RDSO. Designed optimized PostgreSQL schemas and a Flutter frontend with real-time graphical visualization, cutting manual calculation time by ~60%.</p>
+      <p><strong>Tech Stack:</strong> Flutter, Django, Python, PostgreSQL</p>
+      <a href="https://github.com/ayushshukla/soil-suitability-app" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 3 Modal -->
+  <div id="proj3" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>🎓 Placement Portal Application</h2>
+      <img src="placement-portal-ui.png" alt="Placement Portal Interface" class="project-img">
+      <p><strong>Description:</strong> Developed a centralized full-stack placement portal supporting 1000+ students — students apply to openings, recruiters post jobs and browse profiles, and admins manage the entire recruitment workflow end to end.</p>
+      <p><strong>Tech Stack:</strong> React, Node.js, PostgreSQL</p>
+      <a href="https://github.com/ayushshukla/placement-portal" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 4 Modal -->
+  <div id="proj4" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>🤖 AI Chatbot (Edu-Space)</h2>
+      <img src="edu-space-interface.png" alt="AI Chatbot Interface" class="project-img">
+      <p><strong>Description:</strong> Edu-Space AI is a multilingual chatbot supporting 3+ languages that helps users learn space science interactively, combining speech recognition, text-to-speech, and external APIs for ~90% question-answering accuracy.</p>
+      <p><strong>Tech Stack:</strong> Python, Streamlit, Speech Recognition, Translation APIs</p>
+      <a href="https://github.com/ayushshukla-01/Edu-Space--study-space-with-AI" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 5 Modal -->
+  <div id="proj5" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>🌐 Portfolio Website</h2>
+      <img src="portfolio-preview.png" alt="Portfolio Interface" class="project-img">
+      <p><strong>Description:</strong> A responsive, animated portfolio built with HTML, CSS, and JavaScript, with particle background and modal interactions, achieving sub-2s load time across screen sizes.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <a href="https://github.com/ayushshukla-01/Portfolio" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+    </div>
+  </div>
 
   <!-- Experience -->
   <section id="experience" class="section glass">
     <h2>Experience</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <h3>Summer Research Intern – MANIT, Bhopal</h3>
-        <span>Jun 2025</span>
-        <p>Worked on an ISRO-related AI project in space science education.</p>
+        <h3>Full Stack Developer Intern – RDSO, Lucknow</h3>
+        <span>Jul – Aug 2025</span>
+        <p>Designed and delivered a production-ready soil suitability analysis tool used by railway and civil engineers. Built 10+ REST API endpoints with Django REST Framework and normalized PostgreSQL schemas, and cut the API error rate by ~40% through integration testing.</p>
       </div>
       <div class="timeline-item">
-        <h3>Intern – RDSO, Lucknow</h3>
-        <span>Jul – Aug 2025</span>
-        <p>Developed soil blanket thickness calculation app/website with Flutter & Django.</p>
+        <h3>Summer Research Intern – MANIT, Bhopal</h3>
+        <span>Jun 2025</span>
+        <p>Built 3 Python backend modules for an AI-powered ISRO space science education platform, integrating ML inference pipelines that improved question-answering accuracy by ~35%.</p>
       </div>
     </div>
   </section>
@@ -92,7 +181,7 @@
       <div class="edu-card">
         <h3>Bachelor of Technology (CSE)</h3>
         <p><strong>Babasaheb Bhimrao Ambedkar University, Lucknow</strong></p>
-        <p>2022 – 2026 | CGPA: 8.3/10 (till 3rd year)</p>
+        <p>2022 – 2026 | CGPA: 8.5/10</p>
       </div>
       <div class="edu-card">
         <h3>Senior Secondary (PCM)</h3>
@@ -102,35 +191,24 @@
     </div>
   </section>
 
-  <!-- Certificates -->
-  <section id="certificates" class="section glass">
-    <h2>Certificates</h2>
-    <ul class="cert-list">
-      <li> RDSO Internship Certificate (2025)</li>
-      <li> MANIT Internship Certificate (2025)</li>
-      <li> AICTE & VOIS Blockchain Certification (2025)</li>
-      <li> NSS Certificate – Govt. of India (2023)</li>
-      <li> Accenture Data Analytics & Visualization (2024)</li>
-    </ul>
-  </section>
+  
+
+ 
 
   <!-- Contact -->
   <section id="contact" class="section glass">
     <h2>Contact</h2>
     <p>📧 <a href="mailto:ayushshukla8845@gmail.com">ayushshukla8845@gmail.com</a></p>
-    <p>📱 +91-6390841388</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/ayush-shukla-b394a3201"
-       target="_blank">LinkedIn</a></p>
+    <p>📱 <a href="tel:+916390841388">+91-6390841388</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/ayush-shukla-b394a3201" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p>💻 <a href="https://github.com/ayushshukla-01" target="_blank" rel="noopener">GitHub</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Ayush Shukla</p>
+    <p>&copy; 2025 Ayush Shukla</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
